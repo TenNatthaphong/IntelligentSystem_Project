@@ -74,7 +74,7 @@ preprocessor = ColumnTransformer(
 # Create the pipeline with preprocessing and classifier
 model_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
-    ('classifier', RandomForestClassifier(n_estimators=50, random_state=42))
+    ('classifier', RandomForestClassifier(n_estimators=15, random_state=42))
 ])
 
 # Train the model
